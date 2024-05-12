@@ -1,0 +1,30 @@
+{
+	"name": "drago-ex/sessions",
+	"type": "library",
+	"description": "Using session outside the presenter for Nette Framework",
+	"license": ["MIT"],
+	"authors": [
+		{
+			"name": "Zdeněk Papučík",
+			"homepage": "https://github.com/accgit"
+		}
+	],
+	"require": {
+		"php": ">=8.1",
+		"nette/http": "^3.0",
+		"nette/utils": "^3.1"
+	},
+	"require-dev": {
+		"nette/tester": "^2.3",
+		"nette/bootstrap": "^3.0",
+		"tracy/tracy": "^2.7",
+		"phpstan/phpstan-nette": "^0.12"
+	},
+	"autoload": {
+		"classmap": ["src/"]
+	},
+	"scripts": {
+		"phpstan": "phpstan analyse --level 5 --configuration tests/phpstan.neon src",
+		"tester": "tester tests -s"
+	}
+}

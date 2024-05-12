@@ -21,5 +21,10 @@
 	},
 	"autoload": {
 		"classmap": ["app/Bootstrap.php"]
+	},
+	"config": {
+		"allow-plugins": {
+			"dg/composer-cleaner": true
+		}
 	}
 }
